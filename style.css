@@ -11,3 +11,24 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .title-greeter{
+      padding-top: 160px;
+      align-content: center;
+      text-align: center;
+      font-size: 110%
+  }
+  .title-name{
+    text-align: center;
+    font-size: 100%;
+  }
+  .logo{
+      width: 100%;
+  }
+  .job-title{
+      padding-top: 5%;
+  }
+  .date-range{
+      padding-left: 2%;
+      padding-top:%;
+      vertical-align: bottom;
+  }
