@@ -1,6 +1,21 @@
 .parallax {
+    color: #ffffff;
     /* The image used */
     background-image: url("https://www.grafique.com/wp-content/uploads/2013/05/02F20656.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .education-parallax {
+    color: #ffffff;
+    /* The image used */
+    background-image: url("https://abc6onyourside.com/resources/media/2cfe1b60-d908-4437-9360-f6e3485fed8c-large16x9_OhioStateovalwithThompsonLibrary.jpg?1598896728434");
   
     /* Set a specific height */
     height: 500px;
@@ -41,6 +56,7 @@
   #job{
       padding-left: 15%;
       padding-right: 15%;
+      padding-bottom: 7%;
       font-family: 'Bitter', serif;
   }
   #experience{
