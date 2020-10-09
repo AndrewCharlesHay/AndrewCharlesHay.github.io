@@ -27,11 +27,32 @@
       margin-left: auto;
       margin-right: auto;
   }
-  .job-title{
+  #job-title{
       padding-top: 5%;
+      padding-left: 3%;
+      color: #001EE2;
   }
-  .date-range{
-      padding-left: 2%;
+  #date-range{
+      padding-left: 3%;
       padding-top: 1%;
       vertical-align: bottom;
+      color: green;
+  }
+  #job{
+      padding-left: 15%;
+      padding-right: 15%;
+      font-family: 'Bitter', serif;
+  }
+  #experience{
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 3%;
+      font-size: 30px;
+      font-family: 'Arvo', serif;
+  }
+  #job-location{
+      padding-left: 3%;
+  }
+  #command-alkon-logo{
+      padding-top: 15%;
   }
