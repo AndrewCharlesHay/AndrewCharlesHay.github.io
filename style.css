@@ -50,6 +50,9 @@
       font-size: 30px;
       font-family: 'Arvo', serif;
   }
+  #learn-more-button{
+      padding-left: 3%;
+  }
   #job-location{
       padding-left: 3%;
   }
