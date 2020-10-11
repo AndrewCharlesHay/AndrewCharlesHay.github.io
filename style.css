@@ -91,6 +91,16 @@
       padding-bottom: 5%;
   }
   .container{
-      display: flex;
-      flex-wrap: wrap
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #mail-logo{
+      padding-bottom: 5%;
+      width: 150px; /* width of container */
+      height: 150px; /* height of container */
+      object-fit: cover;
+  }
+  .container > div {
+    width: 300px;
+    margin: 10px;
   }
