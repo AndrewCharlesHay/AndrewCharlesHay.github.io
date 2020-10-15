@@ -85,18 +85,27 @@
       padding-bottom: 5%;
   }
   #social-logo{
-      height: 150px;
+      height: 100px;
+      align-items: center;
+      align-content: center;
   }
   #social-logo-div{
       padding-left: 2%;
       padding-right: 2%;
+      align-items: center;
+      align-content: center;
   }
   #social-logos{
       padding-bottom: 5%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
   }
   .container{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
   }
   #mail-logo{
       padding-bottom: 5%;
