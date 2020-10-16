@@ -2,7 +2,7 @@
     color: #000000;
     text-align: center;
     /* The image used */
-    background-image: url("assets/arizona.jpg");
+    background-image: url("../assets/arizona.jpg");
   
     /* Set a specific height */
     height: 500px;
@@ -17,6 +17,20 @@
     color: #ffffff;
     /* The image used */
     background-image: url("https://abc6onyourside.com/resources/media/2cfe1b60-d908-4437-9360-f6e3485fed8c-large16x9_OhioStateovalwithThompsonLibrary.jpg?1598896728434");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tech-parallax {
+    color: #ffffff;
+    /* The image used */
+    background-image: url("https://image.freepik.com/free-vector/science-technology-background-with-hexagons-pattern-hi-tech-background-molecular-structures-chemical-engineering_120542-228.jpg");
   
     /* Set a specific height */
     height: 500px;
@@ -116,4 +130,8 @@
   .container > div {
     width: 300px;
     margin: 10px;
+  }
+  .job-description{
+      text-align: justify;
+      text-justify: inter-word;
   }
