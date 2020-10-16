@@ -1,3 +1,4 @@
+console.log("Hi")
 $(function(){
-    $("#hireContent").load("../hire.html"); 
-  });
+    $("#hireContent").load(""); 
+});
