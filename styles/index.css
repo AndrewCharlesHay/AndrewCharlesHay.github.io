@@ -27,20 +27,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .tech-parallax {
-    color: #ffffff;
-    /* The image used */
-    background-image: url("https://image.freepik.com/free-vector/science-technology-background-with-hexagons-pattern-hi-tech-background-molecular-structures-chemical-engineering_120542-228.jpg");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .title-greeter{
       padding-top: 160px;
       align-content: center;
