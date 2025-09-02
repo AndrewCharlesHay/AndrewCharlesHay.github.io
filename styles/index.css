@@ -1,154 +1,74 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #f8f6f2;
+	color: #333;
+}
+
 .parallax {
-    color: #ffffff;
-    text-align: center;
-    /* The image used */
-    background-image: url("/assets/proposal.jpg");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-.projects-parallax {
-    color: #ffffff;
-    text-align: center;
-    /* The image used */
-    background-image: url("https://www.pbs.org/wgbh/nova/media/images/bfcppfu.width-800.png");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-.hire-parallax {
-    color: #ffffff;
-    text-align: center;
-    /* The image used */
-    background-image: url("https://d2908q01vomqb2.cloudfront.net/8effee409c625e1a2d8f5033631840e6ce1dcb64/2020/01/10/ModernizationBlogSocialBanner_1_leftlogo_nocta.png");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
-  }
-  .education-parallax {
-    color: #ffffff;
-    /* The image used */
-    background-image: url("https://abc6onyourside.com/resources/media/2cfe1b60-d908-4437-9360-f6e3485fed8c-large16x9_OhioStateovalwithThompsonLibrary.jpg?1598896728434");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .title-greeter{
-      padding-top: 160px;
-      align-content: center;
-      text-align: center;
-      font-size: 110%
-  }
-  .logo{
-      width: 80%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  #andrew-hay{
-    text-align: center;
-    align-content: center;
-  }
-  .title-name{
-      text-align: center;
-      align-content: center;
-  }
-  #job-title{
-      padding-top: 5%;
-      padding-left: 3%;
-      color: #001EE2;
-  }
-  #date-range{
-      padding-left: 3%;
-      padding-top: 1%;
-      vertical-align: bottom;
-      color: green;
-  }
-  #job{
-      padding-left: 15%;
-      padding-right: 15%;
-      padding-bottom: 7%;
-      font-family: 'Bitter', serif;
-  }
-  #experience{
-      text-align: center;
-      padding-top: 5%;
-      padding-bottom: 3%;
-      font-size: 30px;
-      font-family: 'Arvo', serif;
-  }
-  #learn-more-button{
-      padding-left: 3%;
-  }
-  #job-location{
-      padding-left: 3%;
-  }
-  #command-alkon-logo{
-      padding-top: 15%;
-  }
-  #ohio-state-logo{
-      padding-top: 5%;
-      padding-bottom: 5%;
-  }
-  #social-logo{
-      height: 100px;
-      align-items: center;
-      align-content: center;
-  }
-  #social-logo-div{
-      padding-left: 2%;
-      padding-right: 2%;
-      align-items: center;
-      align-content: center;
-  }
-  #social-logos{
-      padding-bottom: 5%;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      align-content: center;
-  }
-  .container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  #mail-logo{
-      padding-bottom: 5%;
-      width: 150px; /* width of container */
-      height: 150px; /* height of container */
-      object-fit: cover;
-  }
-  .container > div {
-    width: 300px;
-    margin: 10px;
-  }
-  .job-description{
-      text-align: justify;
-      text-justify: inter-word;
-  }
+	min-height: 60vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parallax1 {
+	background-image: url('../A&K1.jpg');
+}
+.parallax2 {
+	background-image: url('../A&K2.jpg');
+}
+.parallax3 {
+	background-image: url('../A&K3.jpg');
+}
+
+.overlay {
+	background: rgba(0,0,0,0.4);
+	padding: 2rem 3rem;
+	border-radius: 1rem;
+	color: #fff;
+	text-align: center;
+}
+
+.content {
+	background: #fff;
+	margin: -4rem auto 4rem auto;
+	max-width: 600px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.details {
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0;
+}
+.details li {
+	margin: 1rem 0;
+	font-size: 1.1rem;
+}
+.rsvp {
+	font-weight: bold;
+	color: #b48e5c;
+	margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+	.parallax {
+		min-height: 40vh;
+	}
+	.content {
+		margin: -2rem auto 2rem auto;
+		padding: 1rem;
+	}
+	.overlay {
+		padding: 1rem 1.5rem;
+	}
+}
