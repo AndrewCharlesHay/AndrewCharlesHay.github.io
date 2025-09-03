@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
+/* Navigation Bar */
+.nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(107, 122, 106, 0.95);
+	backdrop-filter: blur(10px);
+	z-index: 1000;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+	border-radius: 4px;
+	margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+	background: rgba(255, 255, 255, 0.1);
+	color: #F8F5F0;
+	transform: translateY(-1px);
+}
+
+/* Responsive navigation for mobile */
+@media (max-width: 768px) {
+	.nav-container {
+		flex-wrap: wrap;
+		padding: 0.5rem;
+	}
+	
+	.nav-link {
+		padding: 0.5rem 1rem;
+		font-size: 0.9rem;
+	}
+	
+	body {
+		padding-top: 80px;
+	}
+}
+
+/* Adjust body to account for fixed nav */
+body {
+	padding-top: 60px;
+	margin: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #FFF0F5;
+	scroll-behavior: smooth;
+}
+
+/* Scroll offset for anchor links to account for fixed nav */
+#home, #invitation, #registry, #activities, #hotels, #music {
+	scroll-margin-top: 80px;
+}
+
 /* Move overlay down only in first parallax section */
 .parallax1 .overlay {
 	margin-top: 6rem;
@@ -11,7 +81,7 @@ body {
 	box-shadow: 0 4px 16px rgba(107,122,106,0.12);
 	color: #556B54;
 }ly: 'Segoe UI', Arial, sans-serif;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	.content {
 		margin: -2rem au.music-form-link:hover {
 	background: #556B54;
@@ -60,7 +130,7 @@ body {
 	background-position: 50% 25%;
 }
 .parallax5 {
-	background-image: url('../A&K20.jpg');
+	background-image: url('../A&K25.jpg');
 	background-position: 50% 30%;
 }
 
@@ -181,6 +251,37 @@ body {
 	margin-top: 2rem;
 }
 
+.rsvp-container {
+	margin: 2rem 0;
+	text-align: center;
+}
+
+.rsvp-form-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 1rem 2rem;
+	background: #6B7A6A;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 12px rgba(107, 122, 106, 0.3);
+}
+
+.rsvp-form-link:hover {
+	background: #556B54;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(107, 122, 106, 0.4);
+}
+
+.rsvp-forms-logo {
+	width: 16px;
+	height: 20px;
+}
+
 /* Registry Section Styles */
 .registry-section {
 	background: #fff;
@@ -220,7 +321,7 @@ body {
 	gap: 8px;
 	padding: 8px 16px;
 	border-radius: 8px;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 	transition: background 0.2s, box-shadow 0.2s;
 	color: #3b5998;
@@ -268,7 +369,7 @@ body {
 .activities-list li {
 	margin: 1.5rem 0;
 	padding: 1rem;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	border-radius: 8px;
 	border-left: 4px solid #6B7A6A;
 	color: #333;
@@ -286,7 +387,7 @@ body {
 	object-position: center;
 	border-radius: 6px;
 	flex-shrink: 0;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	padding: 4px;
 }
 
@@ -296,7 +397,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	border-radius: 50%;
 	flex-shrink: 0;
 	font-size: 1.8rem;
@@ -347,7 +448,7 @@ body {
 .hotels-list li {
 	margin: 1.5rem 0;
 	padding: 1.5rem;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	border-radius: 8px;
 	border-left: 4px solid #6B7A6A;
 }
@@ -428,8 +529,8 @@ body {
 }
 
 .music-forms-logo {
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 20px;
 }
 
 .music-suggestions {
@@ -452,7 +553,7 @@ body {
 .suggestion-list li {
 	margin: 0.75rem 0;
 	padding: 0.75rem;
-	background: #FFF0F5;
+	background: #F8F5F0;
 	border-radius: 6px;
 	border-left: 3px solid #6B7A6A;
 	font-size: 1rem;

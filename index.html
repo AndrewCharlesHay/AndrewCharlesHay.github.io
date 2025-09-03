@@ -7,7 +7,19 @@
 	<link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-	<div class="parallax parallax1">
+	<!-- Navigation Bar -->
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="#home" class="nav-link">Home</a>
+			<a href="#invitation" class="nav-link">Invitation</a>
+			<a href="#registry" class="nav-link">Registry</a>
+			<a href="#activities" class="nav-link">Activities</a>
+			<a href="#hotels" class="nav-link">Hotels</a>
+			<a href="#music" class="nav-link">Song Requests</a>
+		</div>
+	</nav>
+
+	<div class="parallax parallax1" id="home">
 		<div class="overlay overlay-left">
 			<h1>Kate & Andy</h1>
 		</div>
@@ -45,7 +57,7 @@
 		</svg>
 	</div>
 	
-	<div class="content">
+	<div class="content" id="invitation">
 		<div class="flowers-bg">
 			<!-- Individual flower on the card -->
 			<svg class="flower flower1" viewBox="0 0 80 80" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
@@ -72,10 +84,15 @@
 			<li><strong>Location:</strong> Immaculate Heart of Mary</li>
 			<li><strong>Time:</strong> 4:00 PM</li>
 		</ul>
-		<p class="rsvp">Please RSVP by May 1st, 2026 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/745px-Google_Forms_logo_%282014-2020%29.svg.png" alt="Google Forms" class="forms-logo"></p>
+		<div class="rsvp-container">
+			<a href="https://forms.google.com/create" target="_blank" rel="noopener" class="rsvp-form-link">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/745px-Google_Forms_logo_%282014-2020%29.svg.png" alt="Google Forms" class="rsvp-forms-logo">
+				<span>Please RSVP by May 1st, 2026</span>
+			</a>
+		</div>
 	</div>
 	<div class="parallax parallax2"></div>
-	<div class="registry-section">
+	<div class="registry-section" id="registry">
 		<h3>Gift Registry</h3>
 		<p>We are registered at:</p>
 		<ul class="registry-list">
@@ -92,7 +109,7 @@
 		</ul>
 	</div>
 	<div class="parallax parallax3"></div>
-	<div class="activities-section">
+	<div class="activities-section" id="activities">
 		<h3>Things to do in Indianapolis</h3>
 		<p>Make the most of your visit to the Crossroads of America!</p>
 		<ul class="activities-list">
@@ -135,7 +152,7 @@
 		</ul>
 	</div>
 	<div class="parallax parallax4"></div>
-	<div class="hotels-section">
+	<div class="hotels-section" id="hotels">
 		<h3>Where to Stay</h3>
 		<p>Recommended hotels for our wedding guests:</p>
 		<ul class="hotels-list">
@@ -174,7 +191,7 @@
 		</ul>
 	</div>
 	<div class="parallax parallax5"></div>
-	<div class="music-section">
+	<div class="music-section" id="music">
 		<h3>Music Requests</h3>
 		<p>Help us create the perfect playlist for our special day!</p>
 		<p>Share your favorite songs that will get everyone dancing:</p>
