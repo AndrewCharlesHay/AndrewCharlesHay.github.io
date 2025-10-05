@@ -17,12 +17,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 0 1rem;
 }
 
 .nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	color: white;
 	text-decoration: none;
 	padding: 1rem 1.5rem;
@@ -116,7 +117,7 @@ body {
 
 .parallax1 {
 	background-image: url('../A&K1.jpg');
-	background-position: 50% 25%;
+	background-position: 50% 20%;
 	position: relative;
 }
 .parallax2 {
