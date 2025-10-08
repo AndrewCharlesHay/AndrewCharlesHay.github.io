@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kate & Andy - Vacation Photos</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#invitation" class="nav-link">Invitation</a>
+      <a href="index.html#registry" class="nav-link">Registry</a>
+      <a href="index.html#activities" class="nav-link">Activities</a>
+      <a href="index.html#hotels" class="nav-link">Hotels</a>
+      <a href="index.html#music" class="nav-link">Song Requests</a>
+      <a href="photos.html" class="nav-link">Photos</a>
+    </div>
+  </nav>
+
+  <div class="content" style="margin-top:2rem;max-width:900px;margin-left:auto;margin-right:auto;text-align:center;">
+    <h2 style="font-family:'Dancing Script',cursive;font-size:2.5rem;color:#6B7A6A;">Vacation Photos</h2>
+    <p>Our favorite moments from our travels together!</p>
+    <div class="vacation-gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;justify-content:center;align-items:start;">
+      <style>
+        .vacation-gallery img {
+          aspect-ratio: 4/3;
+          object-fit: cover;
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+          height: 270px;
+          display: block;
+        }
+        .vacation-gallery img:nth-child(3) {
+          height: 560px;
+          aspect-ratio: unset;
+          grid-row: span 2;
+        }
+      </style>
+      <img src="PXL_20240629_095725603.jpg" alt="Vacation Photo">
+      <img src="PXL_20240630_072830515.jpg" alt="Vacation Photo">
+      <img src="PXL_20240630_203411264.jpg" alt="Vacation Photo">
+      <img src="PXL_20240703_144114324.jpg" alt="Vacation Photo">
+      <img src="PXL_20240703_152837573.jpg" alt="Vacation Photo">
+      <img src="PXL_20240703_153018159.jpg" alt="Vacation Photo">
+      <img src="PXL_20240705_110437319.jpg" alt="Vacation Photo">
+      <img src="PXL_20240705_190838928.jpg" alt="Vacation Photo">
+      <img src="PXL_20240709_155307341.jpg" alt="Vacation Photo">
+      <img src="PXL_20240709_155355830.jpg" alt="Vacation Photo">
+      <img src="PXL_20240709_181908057.jpg" alt="Vacation Photo">
+      <img src="PXL_20240711_163259424.MP.jpg" alt="Vacation Photo">
+    </div>
+  </div>
+</body>
+</html>
