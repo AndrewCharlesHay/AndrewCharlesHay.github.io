@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
+/* --- PIZZAZZ --- */
+/* Floating petals animation */
+@keyframes floatPetal {
+  0% { transform: translateY(-60px) scale(1) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(100vh) scale(1.2) rotate(360deg); opacity: 0; }
+}
+.petal {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  animation: floatPetal 14s linear infinite;
+}
+.petal.petal1 { left: 10vw; animation-delay: 0s; }
+.petal.petal2 { left: 30vw; animation-delay: 3s; }
+.petal.petal3 { left: 50vw; animation-delay: 6s; }
+.petal.petal4 { left: 70vw; animation-delay: 9s; }
+.petal.petal5 { left: 90vw; animation-delay: 12s; }
+
 /* Navigation Bar */
 .nav-bar {
 	position: fixed;
@@ -32,12 +54,30 @@
 	transition: all 0.3s ease;
 	border-radius: 4px;
 	margin: 0 0.25rem;
+	position: relative; /* Added for underline effect */
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	bottom: 8px;
+	height: 2px;
+	background: #FFD700;
+	border-radius: 2px;
+	transform: scaleX(0);
+	transition: transform 0.3s cubic-bezier(.4,0,.2,1);
 }
 
 .nav-link:hover {
 	background: rgba(255, 255, 255, 0.1);
 	color: #F8F5F0;
 	transform: translateY(-1px);
+}
+
+.nav-link:hover::after {
+	transform: scaleX(1);
 }
 
 /* Responsive navigation for mobile */
@@ -188,6 +228,7 @@ body {
 	text-align: center;
 	position: relative;
 	z-index: 3;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both; /* Added fade-in animation */
 }
 
 /* Individual flower on card */
@@ -299,6 +340,7 @@ body {
 	text-align: center;
 	position: relative;
 	z-index: 3;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
 .registry-section h3 {
 	margin-top: 0;
@@ -351,6 +393,7 @@ body {
 	text-align: left;
 	position: relative;
 	z-index: 3;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
 
 .activities-section h3 {
@@ -430,6 +473,7 @@ body {
 	text-align: left;
 	position: relative;
 	z-index: 3;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
 
 .hotels-section h3 {
@@ -496,6 +540,7 @@ body {
 	text-align: center;
 	position: relative;
 	z-index: 3;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
 
 .music-section h3 {
@@ -615,6 +660,7 @@ body {
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
 
 .photos-section h3 {
@@ -664,4 +710,42 @@ body {
 	color: #888;
 	font-style: italic;
 	margin-top: 1rem;
+}
+
+/* --- PIZZAZZ for vacation.html --- */
+@keyframes floatPetal {
+  0% { transform: translateY(-60px) scale(1) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(100vh) scale(1.2) rotate(360deg); opacity: 0; }
+}
+.petal {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  animation: floatPetal 14s linear infinite;
+}
+.petal.petal1 { left: 10vw; animation-delay: 0s; }
+.petal.petal2 { left: 30vw; animation-delay: 3s; }
+.petal.petal3 { left: 50vw; animation-delay: 6s; }
+.petal.petal4 { left: 70vw; animation-delay: 9s; }
+.petal.petal5 { left: 90vw; animation-delay: 12s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.vacation-gallery {
+  animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
+}
+
+.vacation-gallery img {
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.2s;
+}
+.vacation-gallery img:hover {
+  transform: scale(1.08);
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(107,122,106,0.18);
 }
