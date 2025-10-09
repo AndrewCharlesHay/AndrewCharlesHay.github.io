@@ -33,25 +33,36 @@
           height: 270px;
           display: block;
         }
-        .vacation-gallery img:nth-child(3) {
+        .vacation-gallery img.tall-photo {
           height: 560px;
           aspect-ratio: unset;
           grid-row: span 2;
-          object-position: 70% center;
+          object-position: center;
+        }
+        .vacation-gallery img.wide-photo {
+          grid-column: span 2;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 2 / 1;
         }
       </style>
-      <img src="PXL_20240629_095725603.jpg" alt="Vacation Photo">
+      <img src="PXL_20240629_095725603.jpg" class="tall-photo" alt="Vacation Photo">
       <img src="PXL_20240630_072830515.jpg" alt="Vacation Photo">
       <img src="PXL_20240630_203411264.jpg" alt="Vacation Photo">
       <img src="PXL_20240703_144114324.jpg" alt="Vacation Photo">
-      <img src="PXL_20250814_153527975.jpg" alt="Vacation Photo">
+      <img src="PXL_20250808_195340677.jpg" class="tall-photo" alt="Vacation Photo">
       <img src="PXL_20240703_152837573.jpg" alt="Vacation Photo">
+      <img src="PXL_20250808_205356200.jpg" alt="Vacation Photo">
+      <img src="PXL_20250810_013650099.jpg" alt="Vacation Photo">
+      <img src="PXL_20250812_234527446.MP.jpg" alt="Vacation Photo">
+      <img src="PXL_20250814_153527975.jpg" alt="Vacation Photo">
+      <img src="PXL_20250814_163457826.jpg" alt="Vacation Photo">
       <img src="PXL_20240705_110437319.jpg" alt="Vacation Photo">
       <img src="PXL_20240705_190838928.jpg" alt="Vacation Photo">
       <img src="PXL_20240709_155307341.jpg" alt="Vacation Photo">
       <img src="PXL_20240709_155355830.jpg" alt="Vacation Photo">
       <img src="PXL_20240709_181908057.jpg" alt="Vacation Photo">
-      <img src="PXL_20240711_163259424.MP.jpg" alt="Vacation Photo">
+      <img src="PXL_20240711_163259424.MP.jpg" class="wide-photo" alt="Vacation Photo" style="object-position: center 20%;">
     </div>
   </div>
 </body>
