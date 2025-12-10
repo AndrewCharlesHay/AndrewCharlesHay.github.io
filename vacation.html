@@ -28,10 +28,15 @@
           aspect-ratio: 4/3;
           object-fit: cover;
           width: 100%;
+          max-width: 100%;
           border-radius: 12px;
           box-shadow: 0 2px 12px rgba(0,0,0,0.08);
           height: 270px;
           display: block;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: crisp-edges;
         }
         .vacation-gallery img.tall-photo {
           height: 560px;
@@ -44,6 +49,25 @@
           width: 100%;
           height: auto;
           aspect-ratio: 2 / 1;
+        }
+        @media (max-width: 768px) {
+          .vacation-gallery {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .vacation-gallery img {
+            height: auto !important;
+            aspect-ratio: 4/3;
+          }
+          .vacation-gallery img.tall-photo {
+            height: auto !important;
+            aspect-ratio: 3/4;
+            grid-row: span 1;
+          }
+          .vacation-gallery img.wide-photo {
+            grid-column: span 1;
+            aspect-ratio: 4/3;
+          }
         }
       </style>
       <img src="PXL_20240629_095725603.jpg" class="tall-photo" alt="Vacation Photo">
