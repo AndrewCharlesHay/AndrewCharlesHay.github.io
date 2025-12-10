@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kate & Andy - Friends & Family Photos</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#invitation" class="nav-link">Invitation</a>
+      <a href="index.html#registry" class="nav-link">Registry</a>
+      <a href="index.html#activities" class="nav-link">Activities</a>
+      <a href="index.html#hotels" class="nav-link">Hotels</a>
+      <a href="index.html#music" class="nav-link">Song Requests</a>
+      <a href="photos.html" class="nav-link">Photos</a>
+    </div>
+  </nav>
+
+  <div class="content" style="margin-top:2rem;max-width:900px;margin-left:auto;margin-right:auto;text-align:center;">
+    <h2 style="font-family:'Dancing Script',cursive;font-size:2.5rem;color:#6B7A6A;">Friends & Family Photos</h2>
+    <p>Celebrating moments with our loved ones!</p>
+    <div class="vacation-gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;justify-content:center;align-items:start;">
+      <style>
+        .vacation-gallery img {
+          aspect-ratio: 4/3;
+          object-fit: contain;
+          width: 100%;
+          max-width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+          height: auto;
+          display: block;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-perspective: 1000;
+          perspective: 1000;
+          background: #f5f5f5;
+        }
+        .vacation-gallery img.tall-photo {
+          aspect-ratio: 3/4;
+          grid-row: span 2;
+          object-position: center;
+        }
+        .vacation-gallery img.wide-photo {
+          grid-column: span 2;
+          width: 100%;
+          aspect-ratio: 2 / 1;
+        }
+        @media (max-width: 768px) {
+          .vacation-gallery {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .vacation-gallery img {
+            height: auto !important;
+            aspect-ratio: 4/3;
+          }
+          .vacation-gallery img.tall-photo {
+            height: auto !important;
+            aspect-ratio: 3/4;
+            grid-row: span 1;
+          }
+          .vacation-gallery img.wide-photo {
+            grid-column: span 1;
+            aspect-ratio: 4/3;
+          }
+        }
+      </style>
+      <img src="PXL_20250920_205227785.MP.jpg" alt="Friends & Family Photo">
+      <img src="PXL_20250520_144244907.jpg" alt="Friends & Family Photo">
+      <img src="PXL_20250504_133232010.jpg" alt="Friends & Family Photo">
+      <img src="PXL_20251011_184752901~2.jpg" alt="Friends & Family Photo">
+      <img src="PXL_20251017_224238880.jpg" alt="Friends & Family Photo">
+      <img src="PXL_20250810_013650099.jpg" alt="Friends & Family Photo">
+      <img src="2025-09-06_19-22-14_140.jpg" alt="Friends & Family Photo">
+      <img src="2025-07-06_12-10-04_009.jpg" alt="Friends & Family Photo">
+      <img src="2025-04-12_13-56-17_236.jpg" alt="Friends & Family Photo">
+    </div>
+  </div>
+</body>
+</html>
