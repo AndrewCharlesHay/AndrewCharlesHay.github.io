@@ -1,17 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-			<!-- Open Graph Meta Tags for Link Preview -->
-			<meta property="og:title" content="Kate & Andy's Wedding">
-			<meta property="og:description" content="Join us for our wedding celebration! Find details, RSVP, and more.">
-			<meta property="og:image" content="https://andrewcharleshay.github.io/assets/proposal.jpg">
-			<meta property="og:type" content="website">
-			<meta property="og:url" content="https://andrewcharleshay.github.io/">
-			<!-- Twitter Card Meta Tags -->
-			<meta name="twitter:card" content="summary_large_image">
-			<meta name="twitter:title" content="Kate & Andy's Wedding">
-			<meta name="twitter:description" content="Join us for our wedding celebration! Find details, RSVP, and more.">
-			<meta name="twitter:image" content="https://andrewcharleshay.github.io/assets/proposal.jpg">
 		<!-- Wedding Rings SVG Favicon -->
 		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='24' cy='40' r='16' fill='none' stroke='%23FFD700' stroke-width='4'/%3E%3Ccircle cx='40' cy='24' r='16' fill='none' stroke='%23FFD700' stroke-width='4'/%3E%3Cpolygon points='40,6 46,16 34,16' fill='%23FFF' stroke='%23B0E0E6' stroke-width='2'/%3E%3C/svg%3E">
 	<meta charset="UTF-8">
@@ -115,9 +104,10 @@
 	<div class="hotels-section" id="hotels">
 		<h3><span style="font-size:1.1em;">🏨</span> Where to Stay</h3>
 		<p>We have reserved a hotel block for our wedding guests:</p>
-		<div class="hotel-block">
+		<div class="hotel-block-flex">
+		  <div class="hotel-block-info">
 			<div class="hotel-info">
-				<a href="https://www.marriott.com/en-us/hotels/indsi-sheraton-indianapolis-hotel-at-keystone-crossing/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" target="_blank" rel="noopener" class="hotel-title-link">Sheraton Indianapolis Hotel at Keystone Crossing</a>
+				<a href="https://app.marriott.com/reslink?id=1765834887812&key=GRP&app=resvlink" target="_blank" rel="noopener" class="hotel-title-link">Sheraton Indianapolis Hotel at Keystone Crossing</a>
 				<p><span style="font-size:1.1em;">📍</span> <a href="https://www.google.com/maps/place/sheraton+at+keystone+crossing/data=!4m2!3m1!1s0x886b52b35f468089:0x480551bc624f5b79?sa=X&ved=1t:242&ictx=1118787" target="_blank" rel="noopener">8787 Keystone Crossing, Indianapolis, IN 46240</a></p>
 				<p><a href="tel:+18886277814" class="hotel-contact">(888) 627-7814</a> Ask for "Hay Wedding Block"</p>
 			</div>
@@ -130,12 +120,19 @@
 					<li><strong>Parking</strong> in attached garage ($20/day)</li>
 					<li><strong>Friday, July 24th:</strong> The cut-off date for accepting reservations into this block</li>
 				</ul>
+				<div class="hotel-reserve-btn-wrapper">
+				  <a href="https://app.marriott.com/reslink?id=1765834887812&key=GRP&app=resvlink" target="_blank" rel="noopener" class="hotel-reserve-btn">Book your room here</a>
+				</div>
 				<h4>Upgrade Options Available</h4>
 				<ul>
 					<li><strong>Junior Suite:</strong> $289/night</li>
 					<li><strong>Presidential Suite:</strong> $500/night</li>
 				</ul>
 			</div>
+		  </div>
+		  <div class="hotel-image-wrapper">
+			<img src="https://cache.marriott.com/content/dam/marriott-renditions/INDSI/indsi-firepit-3573-hor-wide.jpg?output-quality=90&interpolation=progressive-bilinear&downsize=512px:*" alt="Sheraton Indianapolis Hotel Firepit" class="hotel-image">
+		  </div>
 		</div>
 	</div>
 	<div class="parallax parallax5"></div>
@@ -174,7 +171,7 @@
 				<span>View Our Photo Album</span>
 			</a>
 		</div>
-		<p class="photos-note">Click above to see all our favorite moments captured by our photographer!</p>
+		<p class="photos-note">Click above to see all our favorite moments captured by <a href="https://aseelbroddphotography.com/" target="_blank" rel="noopener">Aseel, our photographer!</a></p>
 	</div>
 	<div class="parallax parallax3"></div>
 	<div class="activities-section" id="activities">

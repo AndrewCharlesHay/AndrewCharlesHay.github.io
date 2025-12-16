@@ -1,3 +1,77 @@
+/* Responsive hotel block flex layout with image */
+.hotel-block-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+.hotel-block-info {
+	flex: 1 1 0%;
+}
+@media (min-width: 900px) {
+	.hotel-block-flex {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 2.5rem;
+	}
+	.hotel-image-wrapper {
+		flex: 0 0 340px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 260px;
+		max-width: 400px;
+	}
+	.hotel-image {
+		width: 100%;
+		max-width: 380px;
+		height: auto;
+		border-radius: 1.2em;
+		box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+		margin-top: 0;
+		display: block;
+	}
+}
+.hotel-image {
+	display: none;
+}
+@media (min-width: 900px) {
+	.hotel-image {
+		display: block;
+	}
+}
+/* Remove bullet points from Room Block Details */
+.hotel-details > ul {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+/* Center the hotel reservation button */
+.hotel-reserve-btn-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+/* Hotel reservation button style */
+.hotel-reserve-btn {
+	display: inline-block;
+	background: #d4af37;
+	color: #fff !important;
+	font-weight: bold;
+	padding: 0.6em 1.4em;
+	border: none;
+	border-radius: 2em;
+	text-decoration: none;
+	font-size: 1.1em;
+	margin-top: 0.5em;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	transition: background 0.2s, color 0.2s;
+	cursor: pointer;
+}
+.hotel-reserve-btn:hover, .hotel-reserve-btn:focus {
+	background: #bfa133;
+	color: #fff;
+}
 /* Make hotel title link look like normal text */
 .hotel-info a.hotel-title-link {
 	color: inherit;
